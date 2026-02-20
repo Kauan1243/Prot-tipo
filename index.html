@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoBase | Protótipo Empresarial</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para ícones (opcional, mas enriquece o design) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR FIXA -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-bezier-curve"></i> Projeto<span>Base</span>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HOME (HERO) -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Bem-vindo ao <span>ProjetoBase</span></h1>
+            <p>Um protótipo empresarial de design limpo, neutro e altamente adaptável. Construído com HTML5, CSS3 e JavaScript puro.</p>
+            <a href="#contato" class="btn btn-primary">Vamos conversar</a>
+            <a href="#portfolio" class="btn btn-outline">Ver projetos</a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre nós</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Somos uma empresa fictícia criada para demonstrar um protótipo funcional com código separado. A proposta é ter um design atemporal, tipografia sóbria e elementos que transmitam confiança e profissionalismo.</p>
+                    <p>Cores neutras (cinza, branco, preto) permitem que o cliente imagine qualquer nicho: tecnologia, consultoria, arquitetura, finanças, etc.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3>+120</h3>
+                            <p>Projetos reais</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <h3>+45</h3>
+                            <p>Clientes satisfeitos</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-award"></i>
+                            <h3>12</h3>
+                            <p>Prêmios</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- Imagem ilustrativa (placeholder) -->
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Equipe em reunião">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SERVIÇOS -->
+    <section id="servicos" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Nossos serviços</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>Desenvolvimento</h3>
+                    <p>Sites institucionais, sistemas web e e-commerces com tecnologia de ponta.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>UX/UI Design</h3>
+                    <p>Interfaces intuitivas e experiências memoráveis para seus usuários.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Consultoria digital</h3>
+                    <p>Estratégias para alavancar sua presença online e métricas de negócio.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO & Marketing</h3>
+                    <p>Otimização para mecanismos de busca e campanhas de alto desempenho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PORTFÓLIO (GALERIA) -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">Portfólio recente</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="app">App</button>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Itens serão gerados/gerenciados pelo JS -->
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Projeto web 1">
+                    <div class="overlay">
+                        <h4>Plataforma Financeira</h4>
+                        <p>Web App</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Projeto design 1">
+                    <div class="overlay">
+                        <h4>Branding Identidade</h4>
+                        <p>Design Gráfico</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Projeto app 1">
+                    <div class="overlay">
+                        <h4>App de Entregas</h4>
+                        <p>Mobile</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Projeto web 2">
+                    <div class="overlay">
+                        <h4>Dashboard Admin</h4>
+                        <p>SaaS</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Projeto design 2">
+                    <div class="overlay">
+                        <h4>Redesign de Site</h4>
+                        <p>UI/UX</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Projeto app 2">
+                    <div class="overlay">
+                        <h4>App Saúde</h4>
+                        <p>Mobile</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Entre em contato</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Vamos construir algo juntos?</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000, São Paulo/SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@projetobase.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Seu nome" id="nome" required>
+                    <input type="email" placeholder="Seu e-mail" id="email" required>
+                    <textarea rows="5" placeholder="Sua mensagem" id="mensagem" required></textarea>
+                    <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar mensagem</button>
+                    <p class="form-feedback" id="formFeedback"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>ProjetoBase &copy; 2025 - Todos os direitos reservados.</p>
+            <p>Feito com <i class="fas fa-heart"></i> para demonstração de código separado.</p>
+        </div>
+    </footer>
+
+    <!-- Chamada do JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
